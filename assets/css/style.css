@@ -104,6 +104,43 @@ header i {
     text-transform: uppercase;
     text-align: center;
     margin-top: 25px;
+    }
+
+/* classes section */
+
+#classes-section > div {
+    display: inline-block;
+    text-align: center;
+}
+
+#yoga-class > h2 {
+    text-transform: uppercase;
+    font-size: 125%;
+    padding-bottom: 5px;
+}
+
+.class-left {
+    width: 24.5%;
+    margin-left: 2%;
+    margin-right: 1%;
+    padding: 3%;
+    background-color: red;
+}
+
+.class-center {
+    width: 24.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 3%;
+    background-color: blue;
+}
+
+.class-right {
+    width: 24%;
+    margin-left: 1%;
+    margin-right: 2%;
+    padding: 3%;
+    background-color: green;
 }
 
 /* contact us section */
