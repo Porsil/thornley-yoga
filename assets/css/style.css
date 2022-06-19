@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none
+}
+
 body {
-    color: red;
+    font-family: Barlow, sans-serif;
+    font-weight: 300;
+}
+
+header {
+    font-family: Bebas Neue, sans-serif;
+    }
+
+nav {
+    font-family: Barlow, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
 }
