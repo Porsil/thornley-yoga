@@ -60,4 +60,31 @@ header {
     width: 100%;
     background: url('../images/buddha.jpg') no-repeat center center;
     clear: both;
+    z-index: 2;
+}
+
+/* tag-line */
+
+#tag-line > h2 {
+    color: #fff;
+    font-family: Bebas Neue, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 33%;
+    padding-top: 7px;
+    text-align: center;
+}
+
+#tag-line {
+    background-image: url('../images/tag-line.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 5%;
+    width: 90%;
+    height: 50px;
+    overflow: hidden;
+    margin-top: -25px;
+    z-index: 1;
 }
