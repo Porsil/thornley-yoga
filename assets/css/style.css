@@ -20,11 +20,16 @@ header {
     text-transform: uppercase;
 }
 
-#logo {
+header i {
+    color: #0E7584;
+}
+
+#header-logo {
     font-family: Bebas Neue, sans-serif;
     letter-spacing: 2px;
     float: left;
     font-size: 300%;
+    margin-top: 10px;
     margin-left: 25px;
 }
 
@@ -50,7 +55,7 @@ header {
 }
 
 #links a:hover {
-    color: #95B0B6;
+    color: #0E7584;
 }
 
 /* hero image */
@@ -99,4 +104,42 @@ header {
     text-transform: uppercase;
     text-align: center;
     margin-top: 25px;
+}
+
+/* footer */
+
+footer {
+    height: 75px;
+}
+
+footer i {
+    color: #0E7584;
+}
+
+#footer-logo {
+    font-family: Bebas Neue, sans-serif;
+    letter-spacing: 2px;
+    float: right;
+    font-size: 300%;
+    margin-right: 25px;
+}
+
+.social-links {
+    text-align: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+.social-links > li {
+    display: inline;
+}
+
+.social-links i {
+    font-size: 120%;
+    padding: 2% 1% 0%;
+    color: #26014d;
+}
+
+.social-links i:hover {
+    color: #0E7584;
 }
