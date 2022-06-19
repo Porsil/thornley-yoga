@@ -89,3 +89,14 @@ header {
     margin-top: -25px;
     z-index: 1;
 }
+
+/* Our Studio */
+
+.section-heading {
+    font-family: Bebas Neue, sans-serif;
+    font-size: 250%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+}
