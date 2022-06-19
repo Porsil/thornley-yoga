@@ -9,14 +9,47 @@
 body {
     font-family: Barlow, sans-serif;
     font-weight: 300;
+    color: #26014d;
 }
 
-header {
-    font-family: Bebas Neue, sans-serif;
-    }
+/* header and logo */
 
-nav {
+header {
     font-family: Barlow, sans-serif;
     font-weight: 300;
     text-transform: uppercase;
+}
+
+#logo {
+    font-family: Bebas Neue, sans-serif;
+    letter-spacing: 2px;
+    float: left;
+    font-size: 300%;
+    margin-left: 25px;
+}
+
+/* navigation links */
+
+#links {
+    font-size: 110%;
+}
+
+#links, #logo {
+    line-height: 75px;
+}
+
+#links li {
+    float: right;
+    list-style-type: none;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+#links a {
+    text-decoration: none;
+}
+
+#links a:hover {
+    color: #95B0B6;
+    font-size: 115%;
 }
