@@ -68,22 +68,23 @@ header {
 #tag-line > h2 {
     color: #fff;
     font-family: Bebas Neue, sans-serif;
+    font-size: 200%;
     letter-spacing: 2px;
     text-transform: uppercase;
     display: inline-block;
     width: 33%;
-    padding-top: 7px;
+    padding-top: 12px;
     text-align: center;
 }
 
 #tag-line {
-    background-image: url('../images/tag-line.jpg');
+    background-color: #0d616e;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin-left: 5%;
     width: 90%;
-    height: 50px;
+    height: 60px;
     overflow: hidden;
     margin-top: -25px;
     z-index: 1;
