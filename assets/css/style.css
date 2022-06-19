@@ -95,7 +95,7 @@ header i {
     z-index: 1;
 }
 
-/* Our Studio */
+/* section headings */
 
 .section-heading {
     font-family: Bebas Neue, sans-serif;
@@ -106,9 +106,40 @@ header i {
     margin-top: 25px;
 }
 
+/* contact us section */
+
+#contact-left, #contact-right {
+    width: 25%;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    line-height: 175%;
+}
+
+#contact-left {
+    float: left;
+    padding-left: 22%;
+    padding-right: 3%
+}
+
+#contact-right {
+    float: right;
+    padding-right: 22%;
+    padding-left: 3%
+}
+
+#contact-left > h3 {
+    text-transform: uppercase;
+}
+
+#contact-right > h3 {
+    text-transform: uppercase;
+}
+
 /* footer */
 
 footer {
+    clear: both;
     height: 75px;
 }
 
@@ -124,7 +155,7 @@ footer {
 
 .social-links i {
     font-size: 120%;
-    padding: 3% 1% 0%;
+    padding: 3% 1% 1%;
     color: #26014d;
 }
 
