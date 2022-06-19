@@ -55,7 +55,7 @@ header i {
 }
 
 #links a:hover {
-    color: #0E7584;
+    color: #95B0B6;
 }
 
 /* hero image */
@@ -112,18 +112,6 @@ footer {
     height: 75px;
 }
 
-footer i {
-    color: #0E7584;
-}
-
-#footer-logo {
-    font-family: Bebas Neue, sans-serif;
-    letter-spacing: 2px;
-    float: right;
-    font-size: 300%;
-    margin-right: 25px;
-}
-
 .social-links {
     text-align: center;
     width: 100%;
@@ -136,7 +124,7 @@ footer i {
 
 .social-links i {
     font-size: 120%;
-    padding: 2% 1% 0%;
+    padding: 3% 1% 0%;
     color: #26014d;
 }
 
