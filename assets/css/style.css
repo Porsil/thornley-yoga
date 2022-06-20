@@ -115,37 +115,33 @@ header i {
     color: #fff;
 }
 
-#yoga-class > h2 {
+.yoga-class > h2 {
     text-transform: uppercase;
     font-size: 125%;
     padding-bottom: 15px;
 }
 
-.class-left {
+.yoga-class {
     width: 30%;
-    margin-left: 2%;
-    margin-right: 1%;
     padding: 3%;
     box-sizing: border-box;
     background-color: #74638D;
+    border-radius: 20px;
+}
+
+.class-left {
+    margin-left: 2%;
+    margin-right: 1%;
 }
 
 .class-center {
-    width: 30%;
     margin-left: 1%;
     margin-right: 1%;
-    padding: 3%;
-    box-sizing: border-box;
-    background-color: #74638D
 }
 
 .class-right {
-    width: 30%;
     margin-left: 1%;
     margin-right: 2%;
-    padding: 3%;
-    box-sizing: border-box;
-    background-color: #74638D;
 }
 
 /* contact us section */
