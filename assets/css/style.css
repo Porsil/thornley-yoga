@@ -98,6 +98,7 @@ header i {
 /* section headings */
 
 .section-heading {
+    clear: both;
     font-family: Bebas Neue, sans-serif;
     font-size: 250%;
     letter-spacing: 2px;
@@ -156,6 +157,50 @@ header i {
     box-sizing: border-box;
     background-color: #0d616e;
     border-radius: 20px;
+}
+
+/* sign up section */
+
+#signup-section > h2 {
+    font-size: 130%;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.signup-form {
+    margin: auto;
+    max-width: 350px;
+    text-align: left;
+}
+
+.signup-input {
+    box-sizing: border-box;
+    border: #26014d 1px solid;
+    line-height: 25px;
+    padding: 3px;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.signup-button {
+   float: right;
+   margin-bottom: 50px;
+   width: 150px;
+   height: 40px;
+   background-color: #26014d;
+   font-family: Bebas Neue, sans-serif;
+   font-size: 130%;
+   color: #fff
+}
+
+.signup-input:hover {
+    border-color: #95B0B6;
+}
+
+.signup-button:hover {
+    background-color: #0d616e;
 }
 
 /* contact us section */
