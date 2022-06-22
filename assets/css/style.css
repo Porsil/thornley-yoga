@@ -18,7 +18,7 @@ header {
     font-family: Barlow, sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    height: 55px;
+    height: 75px;
 }
 
 header i {
@@ -62,7 +62,7 @@ header i {
 /* hero image */
 
 #hero-image {
-    height: 750px;
+    height: 600px;
     width: 100%;
     background: url('../images/buddha.jpg') no-repeat center center;
 }
@@ -88,7 +88,7 @@ header i {
     width: 90%;
     height: 75px;
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: -30px;
 }
 
 /* section headings */
@@ -156,7 +156,6 @@ header i {
 
 .studio-content {
     max-width: 35%;
-    text-align: center;
 }
 
 /* classes section */
@@ -310,4 +309,20 @@ footer {
 
 .social-links i:hover {
     color: #0E7584;
+}
+
+/* media queries */
+
+/* screen size 1100px wide and below */
+@media screen and (max-width: 1100px) {
+    header {
+        height: 65px
+    }
+    #header-logo {
+        font-size: 250%;
+    }
+    #links {
+        font-size: 90%;
+        line-height: 65px;
+    }
 }
