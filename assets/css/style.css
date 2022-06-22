@@ -65,7 +65,6 @@ header i {
     height: 750px;
     width: 100%;
     background: url('../images/buddha.jpg') no-repeat center center;
-    z-index: 2;
 }
 
 /* tag-line */
@@ -84,15 +83,12 @@ header i {
 
 #tag-line {
     background-color: #0d616e;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
     margin-left: 5%;
     width: 90%;
     height: 75px;
     overflow: hidden;
     margin-top: -50px;
-    z-index: 1;
 }
 
 /* section headings */
@@ -106,6 +102,61 @@ header i {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+/* studio section */
+
+#studio-pic-left {
+    background: url('../images/studio-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 300px;
+    margin-left: 2%;
+}
+
+#studio-text-right {
+    float: right;
+    margin-top: -250px;
+    margin-right: 5%;
+    width: 25%;
+    text-align: justify;
+}
+
+#studio-pic-center {
+    background: url('../images/studio-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 450px;
+    margin: -250px auto 0;
+    max-width: 30%;
+    position: relative;
+    z-index: 1;
+}
+
+#studio-text-left {
+    float: left;
+    margin-top: -140px;
+    margin-left: 5%;
+    width: 25%;
+    text-align: justify;
+}
+
+#studio-pic-right {
+    background: url('../images/studio-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 300px;
+    margin-left: 63%;
+    margin-top: -250px;
+    z-index: 2;
+}
+
+.studio-content {
+    max-width: 35%;
+    text-align: center;
 }
 
 /* classes section */
@@ -190,6 +241,7 @@ header i {
    width: 150px;
    height: 40px;
    background-color: #26014d;
+   border-radius: 5px;
    font-family: Bebas Neue, sans-serif;
    font-size: 130%;
    color: #fff
