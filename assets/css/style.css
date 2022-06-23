@@ -374,3 +374,127 @@ footer {
         font-size: 120%;
     }
 }
+
+/* screen size 750px wide and below */
+@media screen and (max-width: 740px) {
+    header {
+        height: 100px
+    }
+    #header-logo {
+        clear: both;
+        font-size: 250%;
+        margin-top: 10px;
+        margin-left: 10%;
+    } 
+    #links {
+        clear: left;
+        float: left;
+        margin-left: 5%;
+        font-size: 110%;
+    }
+    #links, #logo {
+        line-height: 25px;
+    }
+    #links a {
+        font-size: 80%;
+    }
+    #hero-image {
+        height: 575px;
+    }
+    #tag-line > h2 {
+        font-size: 125%;
+        width: 32%;
+    }
+    #tag-line {
+        height: 65px;
+    }
+    #studio-pic-left {
+        margin: 0 5%;
+    }
+    #studio-text-right {
+        margin: 1% 5%;
+        width: 90%;
+        font-size: 100%;
+        text-align: center;
+    }
+    #studio-text-left {
+        margin-top: -70px;
+        margin-left: 5%;
+        width: 90%;
+        font-size: 100%;
+        text-align: center;
+    }
+    #studio-pic-right {
+        margin-left: 5%;
+        margin-top: 40px;
+        width: 90%;
+    }
+    .studio-content {
+        max-width: 100%
+    }
+    .yoga-class {
+        padding: 5%;
+    }
+    #timetable-section > div {
+        margin-left: 5%;
+        padding: 4%;
+    } 
+    .timetable > h3 {
+        font-size: 90%;
+    }
+    .timetable {
+        width: 90%;
+    }
+    .signup-form {
+        max-width: 300px;
+    }
+    .signup-button {
+        margin-bottom: 25px;
+    }
+    #contact-left {
+        padding: 0;
+        width: 50%;
+    }
+    #contact-right {
+        padding: 0;
+        width: 50%;
+    }
+    .social-links {
+        line-height: 85px;
+    }
+}
+
+/* screen size 430px wide and below */
+@media screen and (max-width: 430px) {
+    #header-logo {
+        font-size: 220%;
+        margin-left: 7%;
+    }
+    #links {
+        font-size: 90%;
+        margin-left: 5%;
+        line-height: 40px;
+    }
+    #links li {
+        margin-right: 10px;
+    }
+    #studio-text-left {
+        margin-top: -50px;
+    }
+    #studio-pic-right {
+        margin-top: 80px;
+    }
+    #contact-left {
+        clear: left;
+        width: 100%;
+        font-size: 90%;
+    }
+    #contact-right {
+        clear: right;
+        width: 100%;
+        font-size: 90%;
+    }
+    .social-links {
+        line-height: 100px;
+      }
+}
