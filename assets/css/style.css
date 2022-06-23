@@ -117,10 +117,11 @@ header i {
 
 #studio-text-right {
     float: right;
-    margin-top: -250px;
+    margin-top: -285px;
     margin-right: 5%;
     width: 25%;
-    text-align: justify;
+    font-size: 105%;
+    text-align: left;
 }
 
 #studio-pic-center {
@@ -137,10 +138,11 @@ header i {
 
 #studio-text-left {
     float: left;
-    margin-top: -140px;
+    margin-top: -150px;
     margin-left: 5%;
     width: 25%;
-    text-align: justify;
+    font-size: 105%;
+    text-align: right;
 }
 
 #studio-pic-right {
@@ -324,5 +326,51 @@ footer {
     #links {
         font-size: 90%;
         line-height: 65px;
+    }
+    #studio-pic-left {
+        height: 300px;
+        margin-left: 6%;
+    }
+    #studio-text-right {
+        margin-right: 10%;
+        width: 35%;
+    }
+    #studio-pic-center {
+        visibility: hidden;
+    }
+    #studio-text-left {
+        margin-left: 9%;
+        margin-top: -165px;
+        width: 35%;
+    }
+    #studio-pic-right {
+        margin-left: 48%;
+        margin-top: -310px;
+        z-index: 2;
+    }
+    .studio-content {
+        max-width: 45%;
+    }
+    #classes-section > div {
+        display: block;
+        margin: 1% auto;
+    }
+    .yoga-class > h2 {
+        font-size: 110%;
+    }
+    .yoga-class {
+        width: 80%;
+    }
+    #timetable-section > div {
+        margin-left: 6%;
+    } 
+    .timetable > h2 {
+        font-size: 110%;
+    }
+    .timetable {
+        width: 40%;
+    }
+    #signup-section > h2 {
+        font-size: 120%;
     }
 }
