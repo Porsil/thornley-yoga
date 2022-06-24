@@ -38,6 +38,8 @@ header i {
 
 #links {
     font-size: 110%;
+    font-size: 110%;
+    float: right;
 }
 
 #links,
@@ -46,7 +48,7 @@ header i {
 }
 
 #links li {
-    float: right;
+    display: inline;
     list-style-type: none;
     margin-right: 20px;
     text-decoration: none;
@@ -66,7 +68,7 @@ header i {
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url('../images/buddha.jpg') no-repeat center center;
+    background: url('../images/buddha.webp') no-repeat center center;
 }
 
 /* tag-line */
@@ -109,7 +111,7 @@ header i {
 /* studio section */
 
 #studio-pic-left {
-    background: url('../images/studio-1.jpg');
+    background: url('../images/studio-1.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -126,7 +128,7 @@ header i {
 }
 
 #studio-pic-center {
-    background: url('../images/studio-2.jpg');
+    background: url('../images/studio-2.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
@@ -146,7 +148,7 @@ header i {
 }
 
 #studio-pic-right {
-    background: url('../images/studio-3.jpg');
+    background: url('../images/studio-3.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -326,7 +328,6 @@ footer {
     }
 
     #links {
-        font-size: 90%;
         line-height: 65px;
     }
 
@@ -390,29 +391,25 @@ footer {
     }
 }
 
-/* screen size 750px wide and below */
-@media screen and (max-width: 740px) {
+/* screen size 850px wide and below */
+@media screen and (max-width: 850px) {
     header {
-        height: 100px
+        height: 65px
     }
 
     #header-logo {
-        clear: both;
-        font-size: 250%;
+        font-size: 225%;
         margin-top: 10px;
-        margin-left: 10%;
+        margin-left: 3%;
     }
 
     #links {
-        clear: left;
-        float: left;
-        margin-left: 5%;
-        font-size: 110%;
+        font-size: 90%;
     }
 
     #links,
     #logo {
-        line-height: 25px;
+        line-height: 65px;
     }
 
     #links a {
@@ -432,52 +429,8 @@ footer {
         height: 65px;
     }
 
-    #studio-pic-left {
-        margin: 0 5%;
-    }
-
-    #studio-text-right {
-        margin-top: 20px;
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 90%;
-        font-size: 100%;
-        text-align: center;
-    }
-
-    #studio-text-left {
-        margin-top: -70px;
-        margin-left: 5%;
-        width: 90%;
-        font-size: 100%;
-        text-align: center;
-    }
-
-    #studio-pic-right {
-        margin-left: 5%;
-        margin-top: 40px;
-        width: 90%;
-    }
-
-    .studio-content {
-        max-width: 100%
-    }
-
     .yoga-class {
         padding: 5%;
-    }
-
-    #timetable-section>div {
-        margin-left: 5%;
-        padding: 4%;
-    }
-
-    .timetable>p {
-        font-size: 90%;
-    }
-
-    .timetable {
-        width: 90%;
     }
 
     .signup-form {
@@ -503,30 +456,73 @@ footer {
     }
 }
 
-/* screen size 430px wide and below */
-@media screen and (max-width: 420px) {
+/* screen size 725px wide and below */
+@media screen and (max-width: 725px) {
+    header {
+        height: 155px;
+    }
+    
     #header-logo {
-        font-size: 220%;
+        font-size: 200%;
         margin-left: 7%;
     }
 
     #links {
         font-size: 80%;
-        width: 90%;
-        margin-left: 5%;
-        line-height: 40px;
+        width: 100%;
+        line-height: 20px;
     }
 
     #links li {
-        margin-right: 10px;
+        display: block;
+        margin-left: 14%
+    }
+}
+
+
+/* screen size 700px wide and below */
+@media screen and (max-width: 700px) {
+    #studio-pic-left {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    #studio-text-right {
+        clear: both;
+        width: 90%;
+        margin-right: 5%;
+        margin-top: 15px;
+        font-size: 100%;
+        text-align: center;
     }
 
     #studio-text-left {
-        margin-top: -50px;
+        clear: both;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: -95px;
+        font-size: 100%;
+        text-align: center;
     }
 
     #studio-pic-right {
-        margin-top: 80px;
+        clear: both;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: -5px;
+    }
+
+    .studio-content {
+        max-width: 90%;
+    }
+
+    #timetable-section>div {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #signup-section>h3 {
+        font-size: 100%;
     }
 
     #contact-left {
@@ -543,5 +539,43 @@ footer {
 
     .social-links {
         line-height: 100px;
+    }
+}
+
+/* screen size 450px wide and below */
+@media screen and (max-width: 450px) {
+    #studio-text-left {
+        margin-top: -75px;
+    }
+
+    #studio-pic-right {
+        margin-top: 30px;
+    }
+}
+
+/* screen size 400px wide and below */
+@media screen and (max-width: 400px) {
+    #studio-text-left, 
+    #studio-text-right {
+        font-size: 90%;
+    }
+
+    .signup-form {
+        max-width: 90%;
+    }
+}
+
+/* screen size 320px wide and below */
+@media screen and (max-width: 320px) {
+    #studio-text-left {
+        margin-top: -65px;
+    }
+
+    #studio-pic-right {
+        margin-top: 55px;
+    } 
+    
+    .social-links {
+        font-size: 80%;
     }
 }
