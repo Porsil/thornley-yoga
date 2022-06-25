@@ -133,12 +133,13 @@ header i {
 .studio-text-right {
     display: flex;
     width: 28%;
+    margin-top: 20px;
     position: relative;
     right: 5%;
-    font-size: 120%;
+    font-size: 110%;
 }
 
-.studio-pic-center {
+.center-picture {
     display: flex;
     width: 30%;
     margin: -275px auto 0;
@@ -155,7 +156,7 @@ header i {
     position: relative;
     left: 5%;
     margin-top: -200px;
-    font-size: 120%;
+    font-size: 110%;
     text-align: right;
 }
 
@@ -171,6 +172,7 @@ header i {
     text-align: center;
     color: #fff;
     margin: 0% 2%;
+    font-size: 110%;
 }
 
 .yoga-class>h3 {
@@ -193,6 +195,7 @@ header i {
     display: inline-block;
     text-align: center;
     color: #fff;
+    font-size: 110%;
     margin: 0% 2% 1% 2%;
 }
 
@@ -320,4 +323,133 @@ footer {
 
 /* media queries */
 
-/* screen size 1100px wide and below */
+/* screen size 1290px wide and below */
+@media screen and (max-width: 1290px) {
+    #tag-line>h2 {
+        width: 32%;
+        font-size: 175%;
+    }
+    
+    .center-picture {
+        visibility: hidden;
+    }
+
+    .studio-pic-container {
+        width: 46%;
+    }
+
+    .studio-text-right, 
+    .studio-text-left {
+        width: 40%;
+        font-size: 90%;
+    }
+
+    .studio-text-right {
+        margin-top: 0;
+    }
+    
+    #classes-section>div {
+        display: block;
+        margin-top: 1%;
+        margin-left: 10%;
+        font-size: 90%;
+    }
+
+    .yoga-class>h3 {
+        font-size: 110%;
+    }
+
+    .yoga-class {
+        width: 82%;
+    }
+
+    #timetable-section>div {
+        margin-left: 10%;
+    }
+
+    .timetable>h3 {
+        font-size: 110%;
+    }
+
+    .timetable {
+        width: 35%;
+        }
+
+    .timetable>p {
+        font-size: 90%;
+    }
+
+    #signup-section>h3 {
+        font-size: 120%;
+    }
+}
+
+/* screen size 650px wide and below */
+@media screen and (max-width: 650px) {
+    #tag-line>h2 {
+        font-size: 150%;
+    }
+    
+    .center-picture {
+        display: none;
+    }
+    
+    .studio-container {
+        display: contents;
+    }
+
+    .studio-pic-container {
+        width: 90%;
+        height: 300px;
+    }
+
+    .studio-text-right,
+    .studio-text-left {
+        width: 90%;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    .studio-text-right {
+        right: 0;
+        margin-top: 20px;
+    }
+
+    .studio-text-left {
+        left: 0;
+        margin-top: 5%;
+        margin-bottom: 20px;
+    }
+
+    .right-picture {
+        margin-top: 0;
+    }
+
+    #timetable-section>div {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .signup-form {
+        max-width: 300px;
+    }
+
+    #contact-left,
+    #contact-right {
+        clear: both;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        font-size: 90%;
+    }
+    
+    footer {
+        clear: both;
+        height: 75px;
+        font-size: 80%;
+    }
+
+    .social-links>li {
+        line-height: 100px;
+    }
+}
