@@ -156,9 +156,10 @@ header i {
 }
 
 #studio-pic-right {
-    max-width: 35%;
+    width: 35%;
     margin-left: 63%;
     margin-top: -250px;
+    display: inline-block;
 }
 
 .right-picture {
@@ -361,6 +362,7 @@ footer {
     }
 
     #studio-pic-right {
+        display: block;
         max-width: 45%;
         margin-left: 48%;
         margin-top: -310px;
