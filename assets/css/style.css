@@ -111,62 +111,57 @@ header i {
 
 /* studio section */
 
-#studio-pic-left {
-    max-width: 35%;
-    margin-left: 2%;
+.studio-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-height: 300px;
 }
 
-.left-picture {
+.studio-pic-container {
+    display: flex;
+    width: 32%;
+    margin-left: 5%;
+}
+
+.picture-content {
     width: 100%;
-    height: 300px;
     object-fit: cover;
+    object-position: left;
 }
 
-#studio-text-right {
-    float: right;
-    margin-top: -250px;
-    margin-right: 5%;
-    width: 25%;
-    font-size: 105%;
-    text-align: left;
+.studio-text-right {
+    display: flex;
+    width: 28%;
+    position: relative;
+    right: 5%;
+    font-size: 120%;
 }
 
-#studio-pic-center {
-    max-width: 30%;
-    margin-left: 35%;
-    margin-top: -250px;
-}
-
-.center-picture {
-    width: 100%;
-    height: 450px;
+.studio-pic-center {
+    display: flex;
+    width: 30%;
+    margin: -275px auto 0;
+    height: 500px;
     object-fit: cover;
     object-position: top;
     position: relative;
     z-index: 1;
 }
 
-#studio-text-left {
-    float: left;
-    margin-top: -150px;
-    margin-left: 5%;
-    width: 25%;
-    font-size: 105%;
+.studio-text-left {
+    display: flex;
+    width: 28%;
+    position: relative;
+    left: 5%;
+    margin-top: -200px;
+    font-size: 120%;
     text-align: right;
 }
 
-#studio-pic-right {
-    width: 35%;
-    margin-left: 63%;
-    margin-top: -250px;
-    display: inline-block;
-}
-
 .right-picture {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: left;
+    margin-right: 5%;
+    margin-top: -300px;
 }
 
 /* classes section */
@@ -326,269 +321,3 @@ footer {
 /* media queries */
 
 /* screen size 1100px wide and below */
-@media screen and (max-width: 1100px) {
-    header {
-        height: 65px
-    }
-
-    #header-logo {
-        font-size: 250%;
-    }
-
-    #links {
-        line-height: 65px;
-    }
-
-    #studio-pic-left {
-        max-width: 45%;
-        height: 300px;
-        margin-left: 6%;
-    }
-
-    #studio-text-right {
-        margin-top: -300px;
-        margin-right: 10%;
-        width: 35%;
-    }
-
-    #studio-pic-center {
-        visibility: hidden;
-    }
-
-    #studio-text-left {
-        margin-left: 9%;
-        margin-top: -165px;
-        width: 35%;
-    }
-
-    #studio-pic-right {
-        display: block;
-        max-width: 45%;
-        margin-left: 48%;
-        margin-top: -310px;
-        z-index: 2;
-    }
-
-    #classes-section>div {
-        display: block;
-        margin: 1% auto;
-    }
-
-    .yoga-class>h3 {
-        font-size: 110%;
-    }
-
-    .yoga-class {
-        width: 80%;
-    }
-
-    #timetable-section>div {
-        margin-left: 6%;
-    }
-
-    .timetable>h3 {
-        font-size: 110%;
-    }
-
-    .timetable {
-        width: 40%;
-    }
-
-    #signup-section>h3 {
-        font-size: 120%;
-    }
-}
-
-/* screen size 850px wide and below */
-@media screen and (max-width: 850px) {
-    header {
-        height: 65px
-    }
-
-    #header-logo {
-        font-size: 225%;
-        margin-top: 10px;
-        margin-left: 3%;
-    }
-
-    #links {
-        font-size: 90%;
-    }
-
-    #links,
-    #logo {
-        line-height: 65px;
-    }
-
-    #links a {
-        font-size: 100%;
-    }
-
-    #hero-image {
-        height: 575px;
-    }
-
-    #tag-line>h2 {
-        font-size: 125%;
-        width: 32%;
-    }
-
-    #tag-line {
-        height: 65px;
-    }
-
-    .yoga-class {
-        padding: 5%;
-    }
-
-    .signup-form {
-        max-width: 300px;
-    }
-
-    .signup-button {
-        margin-bottom: 25px;
-    }
-
-    #contact-left {
-        padding: 0;
-        width: 50%;
-    }
-
-    #contact-right {
-        padding: 0;
-        width: 50%;
-    }
-
-    .social-links {
-        line-height: 85px;
-    }
-}
-
-/* screen size 725px wide and below */
-@media screen and (max-width: 725px) {
-    header {
-        height: 155px;
-    }
-    
-    #header-logo {
-        font-size: 200%;
-        margin-left: 7%;
-    }
-
-    #links {
-        font-size: 80%;
-        width: 100%;
-        line-height: 20px;
-    }
-
-    #links li {
-        display: block;
-        margin-left: 14%
-    }
-}
-
-
-/* screen size 700px wide and below */
-@media screen and (max-width: 700px) {
-    #studio-pic-left {
-        max-width: 90%;
-        margin-left: 5%;
-    }
-    
-    .left-picture {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-    }
-
-    #studio-text-right {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 10px;
-        text-align: center;
-    }
-    
-    #studio-text-left {
-        margin-top: -425px;
-        margin-left: 5%;
-        width: 90%;
-        text-align: center;
-    }
-    
-    #studio-pic-right {
-        max-width: 90%;
-        margin-left: 5%;
-        margin-top: -325px;
-    }
-    
-    .right-picture {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        object-position: left;
-    }
-
-    #timetable-section>div {
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    #signup-section>h3 {
-        font-size: 100%;
-    }
-
-    #contact-left {
-        clear: left;
-        width: 100%;
-        font-size: 90%;
-    }
-
-    #contact-right {
-        clear: right;
-        width: 100%;
-        font-size: 90%;
-    }
-
-    .social-links {
-        line-height: 100px;
-    }
-}
-
-/* screen size 475px wide and below */
-@media screen and (max-width: 475px) {
-    #studio-text-left {
-        margin-top: -425px;
-    }
-
-    #studio-pic-right {
-        margin-top: -300px;
-    }
-}
-
-/* screen size 400px wide and below */
-@media screen and (max-width: 400px) {
-    #studio-pic-right {
-        margin-top: -325px;
-    }
-    
-    #studio-text-left, 
-    #studio-text-right {
-        font-size: 90%;
-    }
-
-    .signup-form {
-        max-width: 90%;
-    }
-}
-
-/* screen size 330px wide and below */
-@media screen and (max-width: 330px) {
-    #studio-pic-right {
-        margin-top: -300px;
-    } 
-    
-    .social-links {
-        font-size: 80%;
-    }
-}
