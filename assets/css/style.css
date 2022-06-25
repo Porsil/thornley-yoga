@@ -35,34 +35,87 @@ header i {
     margin-left: 25px;
 }
 
-/* navigation links */
+/* navigation links - hamburger menu */
 
-#links {
-    font-size: 110%;
+.top-nav {
+    float: right;
+}
+
+.links {
     font-size: 110%;
     float: right;
 }
 
-#links,
-#logo {
+#logo,
+.links {
     line-height: 75px;
 }
 
-#links li {
+.links>li {
     display: inline;
     list-style-type: none;
-    margin-right: 20px;
+    margin-right: 10px;
     text-decoration: none;
 }
 
-#links a {
+.links a {
     text-decoration: none;
     color: #26014d
 }
 
-#links a:hover {
-    color: #95B0B6;
+.links a:hover {
+    color: #95B0B6; 
 }
+
+.links-button-container {
+    display: none;
+    height: 5px;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggler {
+    display: none;
+}
+
+.links-button,
+.links-button::before,
+.links-button::after {
+    display: block;
+    background-color: #26014d;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.links-button::before {
+    content: "";
+    margin-top: 8px;
+}
+
+.links-button::after {
+    content: "";
+    margin-top: 17px;
+}
+
+.toggler:checked + .links-button-container .links-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  .toggler:checked + .links-button-container .links-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  .toggler:checked + .links-button-container .links-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
 
 /* hero image */
 
@@ -387,6 +440,53 @@ footer {
     #signup-section>h3 {
         font-size: 120%;
     }
+}
+
+/* screen size 875px wide and below to change nav bar*/
+@media screen and (max-width: 875px) {
+    .links-button-container {
+        display: flex;
+        height: 70px;
+        width: 100px;
+      }
+
+      .links {
+        position: absolute;
+        top: 0;
+        margin-top: 75px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        line-height: 10px;
+      }
+    
+      /* when toggler is not checked */
+      .toggler ~ .links li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      /* when toggler is checked */
+      .toggler:checked ~ .links li {
+        border: 1px solid #fff;
+        height: 25px;
+        padding: 2px;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      /* style for menu items */
+      .links > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: #26014d;
+        background-color: #fff;
+      }
 }
 
 /* screen size 650px wide and below */
