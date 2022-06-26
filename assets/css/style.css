@@ -458,8 +458,8 @@ footer {
 
 /* media queries */
 
-/* screen size 1290px wide and below */
-@media screen and (max-width: 1290px) {
+/* screen size 875px wide and below */
+@media screen and (max-width: 875px) {
     #tag-line>h2 {
         width: 32%;
         font-size: 175%;
@@ -521,11 +521,9 @@ footer {
     #signup-section>h3 {
         font-size: 120%;
     }
-}
 
-/* screen size 875px wide and below to change nav bar to hamburger menu.
+/* Change from nav links to hamburger menu.
 Hamburger menu code taken from hamburger menu example by Narender Singh */
-@media screen and (max-width: 875px) {
     .links-button-container {
         display: flex;
         height: 60px;
