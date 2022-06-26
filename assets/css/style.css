@@ -1,4 +1,7 @@
+/* Google Fonts import - from https://fonts.google.com/ */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bebas+Neue&display=swap');
+
+/* general */
 
 * {
     margin: 0;
@@ -64,7 +67,7 @@ header i {
 }
 
 .links a:hover {
-    color: #95B0B6; 
+    color: #95B0B6;
 }
 
 .links-button-container {
@@ -74,12 +77,14 @@ header i {
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .toggler {
     display: none;
 }
+
+/* hamburger menu code taken from hamburger menu example by Narender Singh */
 
 .links-button,
 .links-button::before,
@@ -101,16 +106,16 @@ header i {
     margin-top: 17px;
 }
 
-.toggler:checked + .links-button-container .links-button::before {
+.toggler:checked+.links-button-container .links-button::before {
     margin-top: 0px;
     transform: rotate(405deg);
 }
-  
-.toggler:checked + .links-button-container .links-button {
+
+.toggler:checked+.links-button-container .links-button {
     background: rgba(255, 255, 255, 0);
 }
-  
-.toggler:checked + .links-button-container .links-button::after {
+
+.toggler:checked+.links-button-container .links-button::after {
     margin-top: 0px;
     transform: rotate(-405deg);
 }
@@ -379,7 +384,7 @@ footer {
 /* form-submitted page */
 
 #form-submitted-container {
-    position:absolute;
+    position: absolute;
     display: inline-flex;
     justify-content: center;
     width: 100%;
@@ -387,7 +392,7 @@ footer {
 }
 
 #form-submitted-message {
-    background-color: rgba(14,117,132, 0.8);
+    background-color: rgba(14, 117, 132, 0.8);
     color: #fff;
     min-width: 40%;
     text-align: center;
@@ -421,7 +426,7 @@ footer {
 /* 404 page */
 
 #error-message-container {
-    position:absolute;
+    position: absolute;
     display: inline-flex;
     justify-content: center;
     width: 100%;
@@ -429,7 +434,7 @@ footer {
 }
 
 #error-message {
-    background-color: rgba(14,117,132, 0.8);
+    background-color: rgba(14, 117, 132, 0.8);
     color: #fff;
     text-transform: uppercase;
     min-width: 40%;
@@ -459,7 +464,7 @@ footer {
         width: 32%;
         font-size: 175%;
     }
-    
+
     .center-picture {
         visibility: hidden;
     }
@@ -468,7 +473,7 @@ footer {
         width: 46%;
     }
 
-    .studio-text-right, 
+    .studio-text-right,
     .studio-text-left {
         width: 40%;
         font-size: 90%;
@@ -481,7 +486,7 @@ footer {
     .right-picture {
         margin-top: -375px;
     }
-    
+
     #classes-section>div {
         display: block;
         margin-top: 1%;
@@ -507,7 +512,7 @@ footer {
 
     .timetable {
         width: 35%;
-        }
+    }
 
     .timetable>p {
         font-size: 90%;
@@ -518,13 +523,14 @@ footer {
     }
 }
 
-/* screen size 875px wide and below to change nav bar to hamburger menu*/
+/* screen size 875px wide and below to change nav bar to hamburger menu.
+Hamburger menu code taken from hamburger menu example by Narender Singh */
 @media screen and (max-width: 875px) {
     .links-button-container {
         display: flex;
         height: 60px;
         width: 100px;
-      }
+    }
 
     .links {
         position: absolute;
@@ -533,30 +539,30 @@ footer {
         left: 0;
         width: 100%;
         line-height: 10px;
-      }
+    }
 
-    .links > li {
+    .links>li {
         display: flex;
         justify-content: center;
         margin: 0;
         padding: 0.5em 0;
         width: 100%;
         background-color: #fff;
-      }
+    }
 
     /* when toggler is not checked */
-    .toggler ~ .links li {
+    .toggler~.links li {
         height: 0;
         margin: 0;
         padding: 0;
         border: 0;
-      }
+    }
 
     /* when toggler is checked */
-    .toggler:checked ~ .links li {
+    .toggler:checked~.links li {
         height: 25px;
         padding: 2px;
-      }
+    }
 }
 
 /* screen size 650px wide and below */
@@ -564,7 +570,7 @@ footer {
     header {
         height: 60px;
     }
-    
+
     #header-logo {
         font-size: 175%;
         margin-left: 10px;
@@ -574,7 +580,7 @@ footer {
     .links {
         margin-top: 60px;
     }
-    
+
     .links-button-container {
         height: 52px;
         width: 50px;
@@ -583,20 +589,20 @@ footer {
     .links-button::after {
         margin-top: 0;
     }
-    
+
     #tag-line {
         height: 60px;
     }
-    
+
     #tag-line>h2 {
         font-size: 125%;
         padding-top: 17px;
     }
-    
+
     .center-picture {
         display: none;
     }
-    
+
     .studio-container {
         display: contents;
     }
@@ -645,7 +651,7 @@ footer {
         padding: 0;
         font-size: 90%;
     }
-    
+
     footer {
         clear: both;
         height: 75px;
@@ -659,7 +665,7 @@ footer {
     #form-submitted-message {
         line-height: 30px;
     }
-    
+
     #form-submitted-message>p {
         font-size: 90%;
     }
