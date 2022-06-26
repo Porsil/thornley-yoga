@@ -488,19 +488,20 @@ footer {
         margin-top: -375px;
     }
 
-    #classes-section>div {
-        display: block;
-        margin-top: 1%;
-        margin-left: 10%;
-        font-size: 90%;
-    }
-
     .yoga-class>h3 {
         font-size: 110%;
     }
 
+    .classes-container {
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+    }
+
     .yoga-class {
-        width: 82%;
+         margin-top: 2%;
+         font-size: 90%;
+         padding: 3%;
     }
 
     #timetable-section>div {
