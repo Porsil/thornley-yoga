@@ -505,7 +505,8 @@ footer {
     }
 
     #timetable-section>div {
-        margin-left: 10%;
+        margin-left: 7%;
+        margin-right: 2.2%;
     }
 
     .timetable>h3 {
@@ -513,7 +514,7 @@ footer {
     }
 
     .timetable {
-        width: 35%;
+        width: 38%;
     }
 
     .timetable>p {
@@ -522,6 +523,11 @@ footer {
 
     #signup-section>h3 {
         font-size: 120%;
+    }
+
+    #contact-left, 
+    #contact-right {
+        padding-top: 10px;
     }
 
 /* Change from nav links to hamburger menu.
@@ -635,8 +641,8 @@ Hamburger menu code taken from hamburger menu example by Narender Singh */
     }
 
     #timetable-section>div {
-        width: 80%;
-        margin-left: 10%;
+        width: 85.5%;
+        margin-left: 7%;
     }
 
     .signup-form {
