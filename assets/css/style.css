@@ -6,7 +6,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: none
+    border: none;
 }
 
 body {
@@ -63,7 +63,7 @@ header i {
 
 .links a {
     text-decoration: none;
-    color: #26014d
+    color: #26014d;
 }
 
 .links a:hover {
@@ -337,13 +337,13 @@ header i {
 #contact-left {
     float: left;
     padding-left: 22%;
-    padding-right: 3%
+    padding-right: 3%;
 }
 
 #contact-right {
     float: right;
     padding-right: 22%;
-    padding-left: 3%
+    padding-left: 3%;
 }
 
 #contact-left>h3 {
@@ -408,7 +408,7 @@ footer {
 }
 
 #form-submitted-message>p {
-    font-size: 125%
+    font-size: 125%;
 }
 
 #form-submitted-message>a {
