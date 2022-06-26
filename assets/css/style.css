@@ -224,8 +224,10 @@ header i {
 
 /* classes section */
 
-#classes-section>div {
-    display: inline-block;
+#classes-section>div  {
+    display: inline-flex;
+    flex-direction: column;
+    height: auto;
     text-align: center;
     color: #fff;
     margin: 0% 2%;
