@@ -35,7 +35,7 @@ header i {
     margin-left: 25px;
 }
 
-/* navigation links - hamburger menu */
+/* navigation links and hamburger menu */
 
 .top-nav {
     float: right;
@@ -43,7 +43,6 @@ header i {
 
 .links {
     font-size: 110%;
-    float: right;
 }
 
 #logo,
@@ -56,6 +55,7 @@ header i {
     list-style-type: none;
     margin-right: 10px;
     text-decoration: none;
+    overflow: hidden;
 }
 
 .links a {
@@ -74,7 +74,7 @@ header i {
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .toggler {
@@ -89,8 +89,6 @@ header i {
     position: absolute;
     height: 4px;
     width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
 }
 
 .links-button::before {
@@ -106,16 +104,16 @@ header i {
 .toggler:checked + .links-button-container .links-button::before {
     margin-top: 0px;
     transform: rotate(405deg);
-  }
+}
   
-  .toggler:checked + .links-button-container .links-button {
+.toggler:checked + .links-button-container .links-button {
     background: rgba(255, 255, 255, 0);
-  }
+}
   
-  .toggler:checked + .links-button-container .links-button::after {
+.toggler:checked + .links-button-container .links-button::after {
     margin-top: 0px;
     transform: rotate(-405deg);
-  }
+}
 
 /* hero image */
 
@@ -442,7 +440,7 @@ footer {
     }
 }
 
-/* screen size 875px wide and below to change nav bar*/
+/* screen size 875px wide and below to change nav bar to hamburger menu*/
 @media screen and (max-width: 875px) {
     .links-button-container {
         display: flex;
@@ -450,42 +448,36 @@ footer {
         width: 100px;
       }
 
-      .links {
+    .links {
         position: absolute;
         top: 0;
         margin-top: 75px;
         left: 0;
-        flex-direction: column;
         width: 100%;
-        justify-content: center;
-        align-items: center;
         line-height: 10px;
       }
-    
-      /* when toggler is not checked */
-      .toggler ~ .links li {
-        height: 0;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      }
-      /* when toggler is checked */
-      .toggler:checked ~ .links li {
-        border: 1px solid #fff;
-        height: 25px;
-        padding: 2px;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      }
-      /* style for menu items */
-      .links > li {
+
+    .links > li {
         display: flex;
         justify-content: center;
         margin: 0;
         padding: 0.5em 0;
         width: 100%;
-        color: #26014d;
         background-color: #fff;
+      }
+
+    /* when toggler is not checked */
+    .toggler ~ .links li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+    /* when toggler is checked */
+    .toggler:checked ~ .links li {
+        height: 25px;
+        padding: 2px;
       }
 }
 
