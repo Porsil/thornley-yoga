@@ -303,8 +303,11 @@ header i {
     background-color: #26014d;
     border-radius: 5px;
     font-family: Bebas Neue, sans-serif;
-    font-size: 130%;
-    color: #fff
+    font-size: 150%;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
 }
 
 .signup-input:hover {
@@ -380,7 +383,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    bottom: 325px;
+    bottom: 40%;
 }
 
 #form-submitted-message {
@@ -422,7 +425,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    bottom: 375px;
+    bottom: 40%;
 }
 
 #error-message {
