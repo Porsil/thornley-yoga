@@ -596,6 +596,10 @@ Hamburger menu code taken from hamburger menu example by Narender Singh */
         margin-top: 0;
     }
 
+    #hero-image {
+        height: 500px;
+    }
+    
     #tag-line {
         height: 60px;
     }
