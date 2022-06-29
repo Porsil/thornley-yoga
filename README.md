@@ -29,10 +29,8 @@ This is the static website for Thornley Yoga. A responsive website designed to b
     -   Alongside the logo of the site, the navigation bar is located at the top of the site allowing different sections to be easily accessed by the user. The site logo itself is a clickable link to the home page.
     -   On large screens the navigation links are arranged horizontally, but when the screen size is reduced to below 875px wide and the links no longer fit in the available space, the navigation links are accessed via a hamburger menu.
 
-    <p align="center">
-        <img alt="Navigation bar for browser" src="assets/read-me-docs/navigation-browser.png" width="800"><br>
-        <img alt="Navigation bar for tablet" src="assets/read-me-docs/navigation-tablet.png" width="400"><br>
-    </P>
+    <img alt="Navigation bar for browser" src="assets/read-me-docs/navigation-browser.png" width="800">
+    <img alt="Navigation bar for tablet" src="assets/read-me-docs/navigation-tablet.png" width="400">
 
 -   **Landing Page Image**
 
