@@ -67,11 +67,9 @@ This is the static website for Thornley Yoga. A responsive website designed to b
 
     -   The sign-up section will allow the user to sign-up to the studio's monthly newsletter and be a part of the community by submitting their full name and e-mail address.
     -   Signing-up will also allow the user to receive any special offers for the studio.
+    -    On clicking the sign-up button, the user is directed to a thank-you page to indicate successful submission of the form and offers a button to go back to the home page. This page keeps the header, hero image and footer from the home page for consitancy and allows for easy navigation to all sections of the website.
 
 ![Sign-up section](assets/read-me-docs/signup-browser.png)
-
-    -   On clicking the sign-up button, the user is directed to a thank-you page to indicate successful submission of the form and offers a button to go back to the home page. This page keeps the header, hero image and footer from the home page for consitancy and allows for easy navigation to all sections of the website.
-
 ![Sign-up page](assets/read-me-docs/signup-page.png)
 
 -   **Contact-Us Section**
