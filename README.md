@@ -98,3 +98,22 @@ This is the static website for Thornley Yoga. A responsive website designed to b
 
     -   A costings section to allow the user to see the prices of joining the studio.
     -   An embedded map to show the location of the studio in the contact us section.
+
+-   ## **Responsiveness**
+
+The website is responsive on all device sizes and to maximise the websites visual appeal and useability of the site there are three 'breakpoints':
+
+-   **876px and above**
+
+    -   The navigation links are listed horizontally, the studio section contains three pictures around two blocks of text, the classes are listed horizontally and the timetable is shown in three columns.
+
+-   **651px to 875px**
+
+    -   The navigation links are provided via a hamburger menu, in the studio section the middle picture is removed, the classes are listed vertically and the timetable is shown in two columns.
+
+-   **650px and below**
+
+    -   The studio section is now shown vertically with the two text blocks shown between the two pictures and the timetable is shown in one column.
+
+
+    
