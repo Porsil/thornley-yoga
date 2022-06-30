@@ -36,8 +36,6 @@ This is the static website for Thornley Yoga. A responsive website designed to b
 
 ![Header](assets/read-me-docs/navigation-browser.png)
 
-<img alt="Navigation bar for browser" src="assets/read-me-docs/navigation-browser.png" width="800">
-
 -   **Landing Page Image**
 
     -   The landing includes a calming Buddha image, to give the user a sense of what yoga is about and includes a tag line to show visitors the positive outcome of practising yoga here.
@@ -50,33 +48,53 @@ This is the static website for Thornley Yoga. A responsive website designed to b
     -   This section will explain to the user that all experience levels are catered for to encourage all user levels to consider practising at the studio.
     -   Included are supporting images of the yoga studio to allow the user to see what the studio and classes look like.
 
-![studio section for browser](assets/read-me-docs/studio-browser.png)    
+![studio section](assets/read-me-docs/studio-browser.png)    
 
 -   **Classes Section**
 
     -   The classes section will allow the user to learn about the different classes on offer at the studio and the benefits of each class.
+
+![Classes section](assets/read-me-docs/classes-browser.png)
 
 -   **Timetable Section**
 
     -   The timetable section will allow the user to see precisely what time each class will happen.
     -   This section will be updated if the class timetable changes to keep the user up to date.
 
+![Timetable section](assets/read-me-docs/timetable-browser.png)
+
 -   **Sign-up Section**
 
     -   The sign-up section will allow the user to sign-up to the studio's monthly newsletter and be a part of the community by submitting their full name and e-mail address.
     -   Signing-up will also allow the user to receive any special offers for the studio.
-    -   On clicking the sign-up button, the user is directed to a thank-you page to indicate successful submission of the form.
+
+![Sign-up section](assets/read-me-docs/signup-browser.png)
+
+    -   On clicking the sign-up button, the user is directed to a thank-you page to indicate successful submission of the form and offers a button to go back to the home page. This page keeps the header, hero image and footer from the home page for consitancy and allows for easy navigation to all sections of the website.
+
+![Sign-up page](assets/read-me-docs/signup-page.png)
 
 -   **Contact-Us Section**
 
     -   The contact-us section will give the user the information required to get in touch with ot visit the studio.
     -   Three methods of communication are given: telephone, e-mail and address.
 
+![Contact-us section](assets/read-me-docs/contact-browser.png)
+
 -   **Footer**
 
     -   The footer section will allow users to view the social media pages of the studio by providing links to the relevant social media sites.
     -   All links will open via a new tab to give user friendly navigation.
     -   The footer will encourage users to join the community by keeping connected through social media.
+
+![Footer section](assets/read-me-docs/footer-browser.png)
+
+-   **404 Page**
+
+    -   A 404 error page was created to notify the user if they attempted to navigate to a page or file that does not exist.
+    -   This page offers a button to return to the home page and keeps the header, hero image and footer from the home page for consitancy and allows for easy navigation to all sections of the website.
+
+![404 page](assets/read-me-docs/404-page.png)
     
 -   **Feastures Left to Implement**
 
