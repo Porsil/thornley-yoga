@@ -97,8 +97,8 @@ This is the static website for Thornley Yoga. A responsive website designed to b
     
 -   **Feastures Left to Implement**
 
-    -   A costings section to allow the user to see the prices of joining the studio. This was not part of the initial design but would be beneficial to site users.
-    -   An embedded map to show the location of the studio in the contact us section. This was in the initial design but was not implemented in the project.
+    -   A costings section to allow the user to see the prices of joining the studio. This was not part of the initial design but would be beneficial to site users. To allow the site to not contain too much contact on the one page, the timetable and costings could be moved to a separate page on the site.
+    -   An embedded map to show the location of the studio in the contact us section. This was in the initial design but was not implemented in the project due to the aesthetics of the page with an embedded map. To add a map to the website, the contact-us section could be moved to a separate page on the site.
 
 -   ## **Responsiveness**
 
@@ -140,12 +140,67 @@ Before the thank-you page was added to the website for completion of the sign-up
 
 Once the testing verified the form was submitting the information as required the submit button was changed to be a link to the form-submitted.html page for aesthetic purposes.
 
+Once deployed the website was tested on Firefox, Google Chrome and Microsoft Edge browsers on a desktop. The website was also tested on a Kindle Fire and iPhone12, in both portrait and landscape.
+
+Testing of the website was also performed by family on a Samsung Galaxy Tab A and a Samsung Galaxy J5 to aid in the descovery of bugs and user experience issues.
+
 -   **Bugs**
 
     -   In the classes section the three div's were not difficult to keep in equal thirds once the margins and padding was added to the CSS code. This was fixed using box-sizing: border-box; taken from the Code Institute Love Running walkthrough project.
     
-    -   Initially the studio section was behaving differently on different browsers, and was hard to maintain intregrity as the screen size changed. This resulted in many media queries to allow the site to be viewed satisfactorily on different screen sizes. After a meeting with my mentor, it was suggested to use display: flex; for this section. The studio section was then updated to use display: flex; which allowed the section to be displayed correctly on the three different browsers.
+    -   Initially the studio section was behaving differently on different browsers, and was hard to maintain intregrity as the screen size changed. This resulted in many media queries to allow the site to be viewed satisfactorily on different screen sizes. The studio section was updated to use display: flex; which allowed the section to be displayed correctly on the three different browsers.
 
     - In the classes section the height of the three div's changed at different times when the screen size was changed beacuse the text broke onto a new line at different sizes. This was fixed by adding a container div in the HTML code and using display: flex; on the container and flex: 1; on the three content div's. This solution was given in this [stackoverflow post](https://stackoverflow.com/questions/2997767/how-do-i-keep-two-side-by-side-div-elements-the-same-height/20669539#20669539)
     
     - Once deployed, it was noted that the studio link in the navigation bar no longer worked. When investigated the studio section id has been deleted in error when the above studio fix was implemented. The id was re-instated to allow the link to function correctly.
+
+    - Also during testing post deployment, it was noticed that the sign-up field requirements were no longer valid as the button was changed to a link to the form-submitted.html page. This was fixed by re-instating the submit button as an input and the form method changed to GET with the action linking to the form-submitted.html page.
+
+-   **Validator Testing**
+
+    - HTML
+        - The [official W3C HTML validator](https://validator.w3.org/) gave an error for the `<div>` in the navigation label stating that a div element is not allowed as a child of a label element in this context. The `<div>` was changed to `<span>` to resolve the error.
+    
+    -   CSS
+        - When passed through the [offical W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) no errors were found.
+
+-   **Accessibility Testing**
+    
+    -   Screen Readers
+        - The website was tested using Microsoft Narrator on a desktop and the VoiceOver function on an iphone12.
+    
+    -   WebAIM Contract Checker
+        - All colour combinations used were checked on the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
+        - The initial purple background colour chosen for the classes section, #74638D, failed the WCAG AAA test for normal text. The background purple colour was changed to a darker shade, #615374, that passed all the WCAG tests:
+
+        ![WebAIM initial purple](assets/read-me-docs/webaim-initial.png)
+
+        - The background purple colour was changed to a darker shade, #615374, that passed all the WCAG tests:
+
+        ![WebAIM final purple](assets/read-me-docs/webaim-final.png)
+
+    -   Lighthouse
+        - Lighthouse reports were generated through the Google Chrome developer tools at several points during the wesites development.
+        - The first report gave a performance score of 76, with the reason being the pictures file size was too large. The pictures were converted from jpeg to webp using [https://ezgif.com](Ezgif).
+        - The second report gave a performance score of 86, with the reason being the pictures were too large. The pictures were re-sized using [https://ezgif.com](Ezgif).
+        - The final report after deployment gave a performance score of 99 and an accessibility score of 100:
+
+        ![Lighthouse Report](assets/read-me-docs/lighthouse-report.png)
+
+-   ## **Deployment**
+
+-   **GitHub Pages**
+
+The project was deployed to GitHub pages using the following steps:
+
+   1.   Log in to GitHub and locate the GitHub repository.
+   2.   Select the "Settings" button at the top of the repository.
+   3.   Select the "Pages" tab on the left hand menu to open the "GitHub Pages" section.
+   4.   In the "Source" section, click the dropdown labelled "None" and select "Main".
+   5.   The page will automatically refresh, and the published site link is given at the top of the "GitHub Pages" section.
+
+-   ## **Credits**
+
+-   **Code**
+
+    - 
