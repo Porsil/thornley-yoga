@@ -97,7 +97,7 @@ This is the static website for Thornley Yoga. A responsive website designed to b
     
 -   **Feastures Left to Implement**
 
-    -   A costings section to allow the user to see the prices of joining the studio.
+    -   A costings section to allow the user to see the prices of joining the studio. This was not part of the initial design but would be beneficial to site users.
     -   An embedded map to show the location of the studio in the contact us section. This was in the initial design but was not implemented in the project.
 
 -   ## **Responsiveness**
