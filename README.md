@@ -8,13 +8,13 @@ This is the static website for Thornley Yoga. A responsive website designed to b
 
 -   ### **Visitor Goals**
 
-    1. Clearly understand the purpose of the site and easily navigate the site to find content, on any screen size.
-    2. To find information on the studio and instructors.
-    3. To learn about the classes available and the benefits of the different yoga styles.
-    4. To get the times of when the different yoga classes are run.
-    5. To sign up to a monthly newsletter to be e-mailed updates, changes and special offers.
-    6. To find the best way to get in contact with the studio to ask questions.
-    7. To find social media links to the yoga community.
+  1. Clearly understand the purpose of the site and easily navigate the site to find content, on any screen size.
+  2. To find information on the studio and instructors.
+  3. To learn about the classes available and the benefits of the different yoga styles.
+  4. To get the times of when the different yoga classes are run.
+  5. To sign up to a monthly newsletter to be e-mailed updates, changes and special offers.
+  6. To find the best way to get in contact with the studio to ask questions.
+  7. To find social media links to the yoga community.
 
 -   ### **Wireframes**
 
@@ -34,6 +34,7 @@ This is the static website for Thornley Yoga. A responsive website designed to b
 -   **Navigation Bar**
 
     -   Alongside the logo of the site, the navigation bar is located at the top of the site with the links arranged horizontally allowing different sections to be easily accessed by the user. The site logo itself is a clickable link to the home page.
+    -   The logo and navaigation bar are fixed in position so they can be accessed at all times by the user to jump between sections.
     -   This addresses visitor goal 1.
 
 ![Header](assets/read-me-docs/navigation-browser.png)
@@ -162,7 +163,9 @@ Testing of the website was also performed by family on a Samsung Galaxy Tab A an
     
     -   Once deployed, it was noted that the studio link in the navigation bar no longer worked. When investigated the studio section id has been deleted in error when the above studio fix was implemented. The id was re-instated to allow the link to function correctly.
 
-    -   Also during testing post deployment, it was noticed that the sign-up field requirements were no longer valid as the button was changed to a link to the form-submitted.html page. This was fixed by re-instating the submit button as an input and the form method changed to GET with the action linking to the form-submitted.html page.
+    -   During testing post deployment, it was noticed that the sign-up field requirements were no longer valid as the button was changed to a link to the form-submitted.html page. This was fixed by re-instating the submit button as an input and the form method changed to GET with the action linking to the form-submitted.html page.
+
+    -   Testing of the form-submitted.html and 404.html pages post deployment revealed that the navigation links in these pages did not work. This is becasue the index.html file was not given in the navigation links, and was therefore added to the navigation links to fix the problem.
 
 -   **Validator Testing**
 
