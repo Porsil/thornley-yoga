@@ -1,4 +1,4 @@
-# <h1 align="center">**Thornley Yoga**</h1>
+# <h1 align="center">**THORNLEY YOGA**</h1>
 
 [View the live project here](https://porsil.github.io/thornley-yoga/index.html)
 
@@ -187,7 +187,7 @@ Testing of the website was also performed by family on a Samsung Galaxy Tab A an
         -   Lighthouse reports were generated through the Google Chrome developer tools at several points during the websites development.
         -   The first report gave a performance score of 76, with the reason being the pictures file size was too large. The pictures were converted from jpeg to webp using [Ezgif](https://ezgif.com).
         -   The second report gave a performance score of 86, with the reason being the pictures were too large. The pictures were re-sized using [Ezgif](https://ezgif.com).
-        -   The final report after deployment gave a performance score of 99 and an accessibility score of 100:
+        -   The final report after deployment gave scores of 100 for all categories:
 
         ![Lighthouse Report](assets/read-me-docs/lighthouse-report.png)
 
