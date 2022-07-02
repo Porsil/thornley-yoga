@@ -25,7 +25,7 @@ This is the static website for Thornley Yoga. A responsive website designed to b
 -   ### **Design**
 
     -   The two main colours used are purple and teal.
-    -   The main font used throughout the website is Barlow, with Bebas Neue used for the logo, section    headers and the sign-up button. These fonts are clean fonts and complement each other well.
+    -   The main font used throughout the website is Barlow, with Bebas Neue used for the logo, section headers and the sign-up button. These fonts are clean fonts and complement each other well.
     -   In case the fonts do not import into the website correctly, Sans Serif was used as the backup font.
     -   A large hero image is used to catch the user's attention and to promote a sense of calm.
 
@@ -34,12 +34,14 @@ This is the static website for Thornley Yoga. A responsive website designed to b
 -   **Navigation Bar**
 
     -   Alongside the logo of the site, the navigation bar is located at the top of the site with the links arranged horizontally allowing different sections to be easily accessed by the user. The site logo itself is a clickable link to the home page.
+    -   This addresses visitor goal 1.
 
 ![Header](assets/read-me-docs/navigation-browser.png)
 
 -   **Landing Page Image**
 
     -   The landing includes a calming Buddha image, to give the user a sense of what yoga is about and includes a tag line to show visitors the positive outcome of practising yoga here.
+    -   This addresses visitor goal 1.
 
 ![hero image](assets/read-me-docs/hero-image.png)
 
@@ -48,12 +50,14 @@ This is the static website for Thornley Yoga. A responsive website designed to b
     -   The studio section will allow the user to learn some basic information about the yoga studio and the experience of practising yoga here.
     -   This section will explain to the user that all experience levels are catered for to encourage all user levels to consider practising at the studio.
     -   Included are supporting images of the yoga studio to allow the user to see what the studio and classes look like.
+    -   This addresses visitor goal 2.
 
 ![studio section](assets/read-me-docs/studio-browser.png)    
 
 -   **Classes Section**
 
     -   The classes section will allow the user to learn about the different classes on offer at the studio and the benefits of each class.
+    -   This addresses visitor goal 3.
 
 ![Classes section](assets/read-me-docs/classes-browser.png)
 
@@ -61,6 +65,7 @@ This is the static website for Thornley Yoga. A responsive website designed to b
 
     -   The timetable section will allow the user to see precisely what time each class will happen.
     -   This section will be updated if the class timetable changes to keep the user up to date.
+    -   This addresses visitor goal 4.
 
 ![Timetable section](assets/read-me-docs/timetable-browser.png)
 
@@ -69,6 +74,7 @@ This is the static website for Thornley Yoga. A responsive website designed to b
     -   The sign-up section will allow the user to sign-up to the studio's monthly newsletter and be a part of the community by submitting their full name and e-mail address.
     -   Signing-up will also allow the user to receive any special offers for the studio.
     -    On clicking the sign-up button, the user is directed to a thank-you page to indicate successful submission of the form and offers a button to go back to the home page. This page keeps the header, hero image and footer from the home page for consistency and allows for easy navigation to all sections of the website.
+    -   This addresses visitor goal 5.
 
 ![Sign-up section](assets/read-me-docs/signup-browser.png)
 ![Sign-up page](assets/read-me-docs/signup-page.png)
@@ -77,6 +83,7 @@ This is the static website for Thornley Yoga. A responsive website designed to b
 
     -   The contact-us section will give the user the information required to get in touch with or visit the studio.
     -   Three methods of communication are given: telephone, e-mail and address.
+    -   This addresses visitor goal 6.
 
 ![Contact-us section](assets/read-me-docs/contact-browser.png)
 
@@ -85,6 +92,7 @@ This is the static website for Thornley Yoga. A responsive website designed to b
     -   The footer section will allow users to view the social media pages of the studio by providing links to the relevant social media sites.
     -   All links will open via a new tab to give user friendly navigation.
     -   The footer will encourage users to join the community by keeping connected through social media.
+    -   This addresses visitor goal 7.
 
 ![Footer section](assets/read-me-docs/footer-browser.png)
 
@@ -102,7 +110,7 @@ This is the static website for Thornley Yoga. A responsive website designed to b
 
 -   ## **Responsiveness**
 
-The website is responsive on all device sizes and to maximise the websites visual appeal and useability of the site there are three 'breakpoints':
+The website is responsive on all device sizes and to maximise the websites visual appeal and useability of the site, this addresses visitor goal 1. There are three 'breakpoints':
 
 -   **876px and above**
 
@@ -150,40 +158,36 @@ Testing of the website was also performed by family on a Samsung Galaxy Tab A an
     
     -   Initially the studio section was behaving differently on different browsers, and was hard to maintain integrity as the screen size changed. This resulted in many media queries to allow the site to be viewed satisfactorily on different screen sizes. The studio section was updated to use display: flex; which allowed the section to be displayed correctly on the three different browsers.
 
-    - In the classes section the height of the three `<div>` elements changed at different times when the screen size was changed because the text broke onto a new line at different sizes. This was fixed by adding a container div in the HTML code and using display: flex; on the container and flex: 1; on the three content `<div>` elements. This solution was given in this [stackoverflow post](https://stackoverflow.com/questions/2997767/how-do-i-keep-two-side-by-side-div-elements-the-same-height/20669539#20669539)
+    -   In the classes section the height of the three `<div>` elements changed at different times when the screen size was changed because the text broke onto a new line at different sizes. This was fixed by adding a container div in the HTML code and using display: flex; on the container and flex: 1; on the three content `<div>` elements. This solution was given in this [stackoverflow post](https://stackoverflow.com/questions/2997767/how-do-i-keep-two-side-by-side-div-elements-the-same-height/20669539#20669539)
     
-    - Once deployed, it was noted that the studio link in the navigation bar no longer worked. When investigated the studio section id has been deleted in error when the above studio fix was implemented. The id was re-instated to allow the link to function correctly.
+    -   Once deployed, it was noted that the studio link in the navigation bar no longer worked. When investigated the studio section id has been deleted in error when the above studio fix was implemented. The id was re-instated to allow the link to function correctly.
 
-    - Also during testing post deployment, it was noticed that the sign-up field requirements were no longer valid as the button was changed to a link to the form-submitted.html page. This was fixed by re-instating the submit button as an input and the form method changed to GET with the action linking to the form-submitted.html page.
+    -   Also during testing post deployment, it was noticed that the sign-up field requirements were no longer valid as the button was changed to a link to the form-submitted.html page. This was fixed by re-instating the submit button as an input and the form method changed to GET with the action linking to the form-submitted.html page.
 
 -   **Validator Testing**
 
     - HTML
-        - The [official W3C HTML validator](https://validator.w3.org/) gave an error for the `<div>` in the navigation label stating that a div element is not allowed as a child of a label element in this context. The `<div>` was changed to `<span>` to resolve the error.
+        -   The [official W3C HTML validator](https://validator.w3.org/) gave an error for the `<div>` in the navigation label stating that a div element is not allowed as a child of a label element in this context. The `<div>` was changed to `<span>` to resolve the error.
     
     -   CSS
-        - When passed through the [official W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) no errors were found.
+        -   When passed through the [official W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) no errors were found.
 
 -   **Accessibility Testing**
     
     -   Screen Readers
-        - The website was tested using Microsoft Narrator on a desktop and the VoiceOver function on an iphone12.
+        -   The website was tested using Microsoft Narrator on a desktop and the VoiceOver function on an iphone12.
     
     -   WebAIM Contract Checker
-        - All colour combinations used were checked on the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
-        - The initial purple background colour chosen for the classes section, #74638D, failed the WCAG AAA test for normal text. The background purple colour was changed to a darker shade, #615374, that passed all the WCAG tests:
+        -   All colour combinations used were checked on the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
+        -   The initial purple background colour chosen for the classes section, #74638D, failed the WCAG AAA test for normal text. The background purple colour was changed to a darker shade, #615374, that passed all the WCAG tests:
 
-        ![WebAIM initial purple](assets/read-me-docs/webaim-initial.png)
-
-        - The background purple colour was changed to a darker shade, #615374, that passed all the WCAG tests:
-
-        ![WebAIM final purple](assets/read-me-docs/webaim-final.png)
+        ![WebAIM contrast checker](assets/read-me-docs/webaim.png)
 
     -   Lighthouse
-        - Lighthouse reports were generated through the Google Chrome developer tools at several points during the websites development.
-        - The first report gave a performance score of 76, with the reason being the pictures file size was too large. The pictures were converted from jpeg to webp using [Ezgif](https://ezgif.com).
-        - The second report gave a performance score of 86, with the reason being the pictures were too large. The pictures were re-sized using [Ezgif](https://ezgif.com).
-        - The final report after deployment gave a performance score of 99 and an accessibility score of 100:
+        -   Lighthouse reports were generated through the Google Chrome developer tools at several points during the websites development.
+        -   The first report gave a performance score of 76, with the reason being the pictures file size was too large. The pictures were converted from jpeg to webp using [Ezgif](https://ezgif.com).
+        -   The second report gave a performance score of 86, with the reason being the pictures were too large. The pictures were re-sized using [Ezgif](https://ezgif.com).
+        -   The final report after deployment gave a performance score of 99 and an accessibility score of 100:
 
         ![Lighthouse Report](assets/read-me-docs/lighthouse-report.png)
 
@@ -203,4 +207,23 @@ The project was deployed to GitHub pages using the following steps:
 
 -   **Code**
 
-    - 
+    -   The code to import the fonts was taken from [Google Fonts](https://fonts.google.com/). This was based on the Code Institute Love Running walkthrough project.
+
+    -   The code to add the icons used in the logo and footer were taken from [Font Awesome](https://fontawesome.com/). This was based on the Code Institute Love Running walkthrough project.
+
+    -   The CSS code to allow the classes section to remain the same height at all times was taken from this [stackoverflow post](https://stackoverflow.com/questions/2997767/how-do-i-keep-two-side-by-side-div-elements-the-same-height/20669539#20669539).
+
+    -   The code for the hamburger menu was based on [Hamburger Menu Example](https://codepen.io/nar3nd3r/pen/GRQVZbq) written by Narender Singh.
+
+-   **Content**
+
+    -   The classes information was based on information from my yoga instructor Zoe Bray-Cotton at [Yoga Burn](https://yoga-burn.net/).
+
+-   **Media**
+
+    -   The hero Buddha image used was taken from [Pixabay](https://pixabay.com/).
+    -   The three pictures used in the studio section were taken from [Pexels](https://www.pexels.com/).
+
+-   **Acknowledgements**
+
+    -   My Mentor Narender Singh for their knowledge and feedback.
