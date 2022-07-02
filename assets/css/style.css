@@ -21,14 +21,18 @@ header {
     font-family: Barlow, sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    height: 75px;
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
 }
 
 header i {
     color: #0E7584;
 }
 
-#header-logo {
+.header-logo {
     font-family: Bebas Neue, sans-serif;
     color: #26014d;
     letter-spacing: 2px;
@@ -46,11 +50,8 @@ header i {
 
 .links {
     font-size: 110%;
-}
-
-#logo,
-.links {
     line-height: 75px;
+    margin-right: 25px;
 }
 
 .links>li {
@@ -120,9 +121,16 @@ header i {
     transform: rotate(-405deg);
 }
 
+/* content following the header */
+
+.main-content {
+    padding-top: 70px;
+    margin-bottom: -25px;
+}
+
 /* hero image */
 
-#hero-image {
+.hero-image {
     height: 600px;
     width: 100%;
     background: url('../images/buddha.webp') no-repeat center center;
@@ -130,7 +138,7 @@ header i {
 
 /* tag-line */
 
-#tag-line>h2 {
+.tag-line>h2 {
     color: #fff;
     font-family: Bebas Neue, sans-serif;
     font-size: 200%;
@@ -138,16 +146,19 @@ header i {
     text-transform: uppercase;
     display: inline-block;
     width: 33%;
-    padding-top: 20px;
+    padding-top: 15px;
     text-align: center;
 }
 
-#tag-line {
+.tag-line {
     background-color: #0d616e;
     background-position: center;
-    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
-    height: 75px;
+    max-width: 1900px;
+    height: 70px;
+    border-radius: 20px;
     overflow: hidden;
     margin-top: -30px;
 }
@@ -161,7 +172,6 @@ header i {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 25px;
     margin-bottom: 25px;
 }
 
@@ -183,6 +193,7 @@ header i {
 .picture-content {
     width: 100%;
     height: 300px;
+    border-radius: 20px;
     object-fit: cover;
     object-position: left;
 }
@@ -191,8 +202,7 @@ header i {
     display: flex;
     width: 28%;
     margin-top: 20px;
-    position: relative;
-    right: 5%;
+    margin-right: 5%;
     font-size: 110%;
 }
 
@@ -201,17 +211,15 @@ header i {
     width: 30%;
     margin: -275px auto 0;
     height: 500px;
+    border-radius: 20px;
     object-fit: cover;
     object-position: top;
-    position: relative;
-    z-index: 1;
 }
 
 .studio-text-left {
     display: flex;
     width: 28%;
-    position: relative;
-    left: 5%;
+    margin-left: 5%;
     margin-top: -200px;
     font-size: 110%;
     text-align: right;
@@ -249,12 +257,17 @@ header i {
 
 /* timetable section */
 
-#timetable-section>div {
+.timetable {
     display: inline-block;
     text-align: center;
     color: #fff;
     font-size: 110%;
     margin: 0% 2% 1% 2%;
+    width: 29%;
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: #0d616e;
+    border-radius: 20px;
 }
 
 .timetable>h3 {
@@ -268,17 +281,9 @@ header i {
     padding-bottom: 5px;
 }
 
-.timetable {
-    width: 29%;
-    padding: 2%;
-    box-sizing: border-box;
-    background-color: #0d616e;
-    border-radius: 20px;
-}
-
 /* sign up section */
 
-#signup-section>h3 {
+.signup-heading {
     font-size: 130%;
     width: 90%;
     margin: auto;
@@ -326,8 +331,8 @@ header i {
 
 /* contact us section */
 
-#contact-left,
-#contact-right {
+.contact-left,
+.contact-right {
     width: 25%;
     text-align: center;
     padding-top: 25px;
@@ -335,23 +340,23 @@ header i {
     line-height: 175%;
 }
 
-#contact-left {
+.contact-left {
     float: left;
     padding-left: 22%;
     padding-right: 3%;
 }
 
-#contact-right {
+.contact-right {
     float: right;
     padding-right: 22%;
     padding-left: 3%;
 }
 
-#contact-left>h3 {
+.contact-left>h3 {
     text-transform: uppercase;
 }
 
-#contact-right>h3 {
+.contact-right>h3 {
     text-transform: uppercase;
 }
 
@@ -384,15 +389,15 @@ footer {
 
 /* form-submitted page */
 
-#form-submitted-container {
+.form-submitted-container {
     position: absolute;
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    bottom: 40%;
+    top: 10%;
 }
 
-#form-submitted-message {
+.form-submitted-message {
     background-color: rgba(14, 117, 132, 0.8);
     color: #fff;
     min-width: 40%;
@@ -401,18 +406,18 @@ footer {
     padding: 30px;
 }
 
-#form-submitted-message>h2 {
+.form-submitted-message>h2 {
     font-family: Bebas Neue, sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 175%;
 }
 
-#form-submitted-message>p {
+.form-submitted-message>p {
     font-size: 125%;
 }
 
-#form-submitted-message>a {
+.form-submitted-message>a {
     text-decoration: none;
     background-color: #26014d;
     font-family: Bebas Neue, sans-serif;
@@ -426,15 +431,15 @@ footer {
 
 /* 404 page */
 
-#error-message-container {
+.error-message-container {
     position: absolute;
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    bottom: 40%;
+    top: 10%;
 }
 
-#error-message {
+.error-message {
     background-color: rgba(14, 117, 132, 0.8);
     color: #fff;
     text-transform: uppercase;
@@ -445,7 +450,7 @@ footer {
     padding: 30px;
 }
 
-#error-message>a {
+.error-message>a {
     text-decoration: none;
     background-color: #26014d;
     font-family: Bebas Neue, sans-serif;
@@ -461,13 +466,17 @@ footer {
 
 /* screen size 875px wide and below */
 @media screen and (max-width: 875px) {
-    #tag-line>h2 {
+    .tag-line>h2 {
         width: 32%;
         font-size: 175%;
     }
 
     .center-picture {
         visibility: hidden;
+    }
+
+    .studio-container {
+        margin-bottom: -90px;
     }
 
     .studio-pic-container {
@@ -504,7 +513,7 @@ footer {
          padding: 3%;
     }
 
-    #timetable-section>div {
+    .timetable {
         margin-left: 7%;
         margin-right: 2.2%;
     }
@@ -521,12 +530,12 @@ footer {
         font-size: 90%;
     }
 
-    #signup-section>h3 {
+    .signup-section>h3 {
         font-size: 120%;
     }
 
-    #contact-left, 
-    #contact-right {
+    .contact-left, 
+    .contact-right {
         padding-top: 10px;
     }
 
@@ -577,7 +586,7 @@ Hamburger menu code taken from hamburger menu example by Narender Singh */
         height: 60px;
     }
 
-    #header-logo {
+    .header-logo {
         font-size: 175%;
         margin-left: 10px;
         margin-top: 13px;
@@ -596,15 +605,15 @@ Hamburger menu code taken from hamburger menu example by Narender Singh */
         margin-top: 0;
     }
 
-    #hero-image {
+    .hero-image {
         height: 500px;
     }
     
-    #tag-line {
+    .tag-line {
         height: 60px;
     }
 
-    #tag-line>h2 {
+    .tag-line>h2 {
         font-size: 125%;
         padding-top: 17px;
     }
@@ -644,7 +653,7 @@ Hamburger menu code taken from hamburger menu example by Narender Singh */
         margin-top: 0;
     }
 
-    #timetable-section>div {
+    .timetable {
         width: 85.5%;
         margin-left: 7%;
     }
@@ -653,8 +662,8 @@ Hamburger menu code taken from hamburger menu example by Narender Singh */
         max-width: 300px;
     }
 
-    #contact-left,
-    #contact-right {
+    .contact-left,
+    .contact-right {
         clear: both;
         width: 100%;
         margin: auto;
@@ -672,15 +681,15 @@ Hamburger menu code taken from hamburger menu example by Narender Singh */
         line-height: 100px;
     }
 
-    #form-submitted-message {
+    .form-submitted-message {
         line-height: 30px;
     }
 
-    #form-submitted-message>p {
+    .form-submitted-message>p {
         font-size: 90%;
     }
 
-    #form-submitted-message>a {
+    .form-submitted-message>a {
         font-size: 100%;
     }
 }
