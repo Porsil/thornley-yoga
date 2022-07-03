@@ -167,6 +167,8 @@ Testing of the website was also performed by family on a Samsung Galaxy Tab A an
 
     -   Testing of the form-submitted.html and 404.html pages post deployment revealed that the navigation links in these pages did not work. This is becasue the index.html file was not given in the navigation links, and was therefore added to the navigation links to fix the problem.
 
+    - Testing of the form-submitted.html and 404.html pages also showed that for screens between 651px and 875px the navigation bar did not diplay properly and had gaps in the navigation links where the hero image could be seen. The margins were corrected to fix the bug.
+
 -   **Validator Testing**
 
     - HTML
