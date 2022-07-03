@@ -394,7 +394,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    top: 10%;
+    top: 20%;
 }
 
 .form-submitted-message {
@@ -436,7 +436,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    top: 10%;
+    top: 20%;
 }
 
 .error-message {
